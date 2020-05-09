@@ -1,17 +1,14 @@
 package com.osm8.javahomework;
 
-import com.osm8.javahomework.venicle.Car;
-
 public class Main {
 
     public static void main(String[] args) {
-	    Car car = new Car("Toyota", "Corolla", "5H42HJ2426J625");
-        System.out.println(car.toString() + "\n");
-        car.setFuelGaugeValue(50);
-        car.setVendorName("Tesla");
-        car.setModelName("Model S");
-        car.setSerialNumber("41HH52J26J3K34");
-        System.out.println(car.toString() + "\n");
-        car.printFuelLevel();
+        Cat cat = new Cat("Cat", 5, 4D);
+        Cat secondCat = new Cat("Cat 2", 2, 3.7D);
+        Cat thirdCat = new Cat("Cat 3", 1, 2.7D);
+
+        System.out.println(cat.voice("i'm a cat"));
+        System.out.println(secondCat.voice("i'm a cat too"));
+        System.out.println(thirdCat.voice("meow"));
     }
 }
